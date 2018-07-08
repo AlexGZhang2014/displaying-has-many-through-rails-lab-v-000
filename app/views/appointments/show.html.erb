@@ -1,0 +1,6 @@
+<h1>Appointment Page</h1>
+<ul>
+  <li><%= @appointment.appointment_datetime.strftime('%B %d, %Y at %H:%M') %></li>
+  <li>For <%= @appointment.patient.name %></li>
+  <li>With <%= @appointment.doctor.name %></li>
+</ul>
